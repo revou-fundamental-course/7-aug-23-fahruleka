@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hitung Luas dan Keliling Segitiga</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Luas dan Keliling Segitiga</h1>
+        <!--tamabahan-->
+        <!-- Form Hitung Luas -->
+        <div class="form luas-form">
+            <h2>Luas</h2>
+            <div class="image-container">
+                <img src="assets/rumus luas segitiga.jpg" alt="Segitiga" class="triangle-image">
+            </div>
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas">
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi">
+            <button onclick="hitungLuas()">Hitung Luas</button>
+            <button onclick="resetLuas()" class="reset-button">Reset</button>
+            <p>Luas: <span id="luas"></span></p>
+        </div>
+        
+        <!-- Form Hitung Keliling -->
+        <div class="form keliling-form">
+            <h2>Keliling</h2>
+            <div class="image-container">
+                <img src="assets/Rumus-keliling-Segitiga.jpg" alt="Segitiga" class="triangle-image">
+            </div>
+            <label for="sisiA">Sisi A:</label>
+            <input type="number" id="sisiA">
+            <label for="sisiB">Sisi B:</label>
+            <input type="number" id="sisiB">
+            <label for="sisiC">Sisi C:</label>
+            <input type="number" id="sisiC">
+            <button onclick="hitungKeliling()">Hitung Keliling</button>
+            <button onclick="resetKeliling()" class="reset-button">Reset</button>
+            <p>Keliling: <span id="keliling"></span></p>
+        </div>
+    </div>
+    <script src="css/style.css"></script>
+</body>
+</html>
